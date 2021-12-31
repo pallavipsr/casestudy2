@@ -60,6 +60,6 @@ app.get('/',function(req,res){
 
 
 
-app.listen(5000,()=>{
-    console.log("Server Ready on 5000");// instead of 5000 it was written as 3000 point 5
+app.listen(process.env.PORT||5000,()=>{
+    console.log("Server Ready on 5000"); // point5
 });
